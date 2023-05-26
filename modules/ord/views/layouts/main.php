@@ -3,10 +3,11 @@
 /** @var yii\web\View $this */
 /** @var string $content */
 
-use app\assets\AppAsset;
+
+use app\modules\ord\assets\OrderAsset;
 use yii\bootstrap4\Html;
 
-AppAsset::register($this);
+OrderAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
