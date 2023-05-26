@@ -40,7 +40,6 @@ class OrderController extends Controller
         $searchModel->validate();
         $filterParams = $searchModel->getFilters($attr);
         $dataProvider = $searchModel->search($attr);
-        //var_dump($filterParams['status']);
         return $this->render('index', compact('searchModel', 'dataProvider', 'filterParams'));
     }
 

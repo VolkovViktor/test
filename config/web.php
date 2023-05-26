@@ -14,15 +14,12 @@ $config = [
     'modules' => [
         'ord' => [
             'class' => 'app\modules\ord\Module',
-            //'layout' => 'main',
-            //'defaultRoute' => 'main/index',
         ],
     ],
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => '1lJz-3Geb3LFAif9PIIh4GEu2Wt3qTkj',
-            //'baseUrl' => 'web/index',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -57,9 +54,7 @@ $config = [
             'showScriptName' => false,
             'enableStrictParsing' => false,
             'rules' => [
-                //'/ord/order' => 'orders',
                 'orders' => '/ord/order/index',
-//                'orders'=>'orders/orders/index',
             ],
         ],
 

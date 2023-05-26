@@ -13,7 +13,6 @@ use yii\widgets\ActiveForm;
 
 $bundle = OrderAsset::register($this);
 
-$this->title = 'Orders';
 $this->params['breadcrumbs'][] = $this->title;
 
 ?>
@@ -23,7 +22,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div style="float: right;">
         <?php
-            var_dump($filterParams['status']);
             $form1 = ActiveForm::begin(['method' => 'get', 'action' => Url::current()]);
             echo Html::input('text', 'search_text');
             echo Html::dropDownList('search_attr', 'id', ['id', 'user_last_name', 'user_first_name', 'link']);
