@@ -6,7 +6,6 @@
 
 use app\modules\ord\assets\OrderAsset;
 use yii\bootstrap4\Html;
-use yii\bootstrap4\NavBar;
 
 OrderAsset::register($this);
 ?>
@@ -25,7 +24,7 @@ OrderAsset::register($this);
 
 <header>
 
-    <div class="container-fluid" style="background: lightgray; margin-left: 100pt; margin-right: 100pt;">
+    <div class="container-fluid" style="background: lightgray; margin-left: 10%; margin-right: 10%;">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -36,7 +35,7 @@ OrderAsset::register($this);
         </div>
         <div class="collapse navbar-collapse" id="bs-navbar-collapse">
             <ul class="nav navbar-nav" style="background: darkgray;">
-                <li class="active"><a href="#">Orders</a></li>
+                <li class="active"><a href="#" style="color:black;">Orders</a></li>
             </ul>
         </div>
     </div>
