@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?php foreach ($filterParams['statuses'] as $key => $value): ?>
-            <?= Html::a($value, ['index', 'OrderSearch[status]' => $key], ['click' => 'this.style.color="red"']) ?>
+            <?= Html::a($value, ['index', 'OrderSearch[status]' => $key], ['onmousedown' => 'this.style.color="red"']) ?>
         <?php endforeach; ?>
     </p>
 
