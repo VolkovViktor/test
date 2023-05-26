@@ -3,6 +3,7 @@
 use app\modules\ord\assets\OrderAsset;
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 
 /** @var yii\web\View $this */
@@ -22,7 +23,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div style="float: right;">
         <?php
-            $form1 = ActiveForm::begin(['method' => 'get', 'action' => "index.php?r=ord/order/index&OrderSearch[status]={$filterParams['status']}"]); //add status !!!!!!!!!!!!!!!
+            var_dump($filterParams['status']);
+            $form1 = ActiveForm::begin(['method' => 'get', 'action' => Url::current()]);
             echo Html::input('text', 'search_text');
             echo Html::dropDownList('search_attr', 'id', ['id', 'user_last_name', 'user_first_name', 'link']);
             echo Html::submitButton('Search');

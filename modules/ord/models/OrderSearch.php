@@ -165,6 +165,7 @@ class OrderSearch extends Order
      */
     public function getFilters($attr) {
         $status = $attr['OrderSearch']['status'];
+        //var_dump($status);
         $countAllOrders = $this->getAllOrdersCount();
         $countServices = $this->getCountServices();
         $services = $this->getServices();
